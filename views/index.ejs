@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs"); %>
+<body>
+<% if (locals.Posts) { %>
+
+    <div class="posts-grid">
+    <%for (let i = 0; i< Posts.length; i++)
+    { %>
+        <div class="post">
+            <h1 class="post-title"><a href="/view/<%=Posts[i].index %>"> <%= Posts[i].title%></a></h1>
+            <p class="post-content"><%= Posts[i].content%></p>
+            <p class="post-date"><%= Posts[i].date%></p>
+        </div>
+    <% } %>
+
+    </div>
+<% } %>
+
+</body>
+
+<%- include("partials/footer.ejs"); %>

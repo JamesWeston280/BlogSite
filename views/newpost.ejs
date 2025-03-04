@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs"); %>
+<body>
+    <div class="newpost">
+
+        <h1 class="newPostTitle">Create a new post!</h1>
+
+        <form action="/" method="POST">
+            <input name="title" class="contentBox" type="text" placeholder="Title" required></input>
+            <textarea name="content" class="contentBox" type="text" placeholder="Content" required></textarea>
+            <input name="submit" class="submitButton" type="submit"></input>
+        </form>
+    </div>
+</body>

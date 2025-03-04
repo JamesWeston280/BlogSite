@@ -1,0 +1,145 @@
+body{
+    background-color: #01161E;
+    margin: 15px;
+}
+
+nav {
+    list-style-type: none;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    background-color: #598392;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 25px;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.posts-grid{
+    border-radius: 25px;
+    background-color: #124559;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 0.5fr));
+}
+
+.post{
+    border-radius: 25px;
+    padding: 25px;
+    margin: 10px;
+    background-color: #598392;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.post-title{
+    color: #01161E;
+    font-size: 1.5rem;
+}
+
+.post-content{
+    color: #01161E;
+    font-size: 1rem;
+}
+
+.post-date{
+    color: #01161E;
+    font-size: 0.6rem;
+}
+
+a:link {
+    color: #01161E;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #01161E;
+    
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #01161E;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #01161E;
+  }
+
+.contentBox{
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    padding: 10px;
+    border-style: none;
+}
+
+textarea{
+    height: 220px;
+    margin: 10px;
+}
+
+.submitButton{
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.newpost{
+    border-radius: 25px;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #598392;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 800px) {
+    .newpost{
+        border-radius: 25px;
+        padding: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #598392;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .post{
+        border-radius: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+        background-color: #598392;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .posts-grid{
+        display: inline-block;
+        padding: 25px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+  }
+
+  .newPostTitle
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+

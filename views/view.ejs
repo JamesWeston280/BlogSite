@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs"); %>
+
+
+<% if (locals.Posts) { %>
+
+    <div class="newpost">
+
+        <h1 class="newPostTitle">Edit or delete post!</h1>
+
+        <form action="/edited/<%=Posts[PostIndex].index %>" method="POST">
+            <input name="title" class="contentBox" type="text" placeholder="<%= Posts[PostIndex].title%>"></input>
+            <textarea name="content" class="contentBox" type="text" placeholder="<%= Posts[PostIndex].content%>"></textarea>
+            <input name="submit" class="submitButton" type="submit"></input>
+        </form>
+
+        <% } %>
+
+    </div>
+
+    <a href="/delete/<%=Posts[PostIndex].index %>">Delete post</a>
