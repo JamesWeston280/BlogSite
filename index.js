@@ -61,7 +61,7 @@ app.get("/delete/:index", (req, res)=> {
 
 app.post("/edited/:index", (req, res)=> {
     EditPost(req.params.index, req.body["title"], req.body["content"]);
-    res.render("index.ejs", {PostIndex: req.params.index, Posts: posts});
+    res.redirect("/");
 });
 
 app.get("/view/:index", (req, res)=> {
@@ -75,7 +75,7 @@ app.get("/newpost", (req, res)=> {
 
 app.post("/", (req, res)=>{
     CreatePost(req.body["title"], req.body["content"])
-    res.render("index.ejs",{Posts: posts});
+    res.redirect("/");
 });
 
 app.listen(port, () => {
